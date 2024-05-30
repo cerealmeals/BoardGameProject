@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 8px;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+}
