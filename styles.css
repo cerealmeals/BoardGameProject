@@ -60,6 +60,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(90deg, green, royalblue);
 }
 .coreStatement{
     flex: 1;
@@ -78,6 +79,7 @@ body{
     background-color: grey;
     justify-content: center;
     align-items: center;
+    
 }
 li{
     text-align: center;
