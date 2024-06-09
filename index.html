@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="default.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
+    <script src="functions.js" defer></script>
     <title>Animal Heist</title>
 </head>
 <body>
@@ -13,29 +16,22 @@
             <div class="title">
                 <a href="index.html">Animal Heist</a>
             </div>
-            <div class="links">
-                <ul>
-                    <li><a href="pages/gameDescription.html">Game Description</a> </li>
-                    <li><a href="pages/VisualGallery.html">Visual Gallery</a> </li>
-                    <li><a href="pages/aboutUs.html">About us</a> </li>
-                </ul>
-            </div>
+            <button class="hamburger">
+                <!-- material icons https://material.io/resources/icons/ -->
+                <i class="menuIcon material-icons">menu</i>
+                <i class="closeIcon material-icons">close</i>
+              </button>
         </div>
         <img class="banner" src="images/Green_Blue_Illustrative_Forest_Camp_Banner.png" alt="Picture of board game">
     </div>
+    <div class="menu">
+        <ul>
+            <li><a class="menuItem" href="pages/gameDescription.html">Game Description</a> </li>
+            <li><a class="menuItem" href="pages/VisualGallery.html">Visual Gallery</a> </li>
+            <li><a class="menuItem" href="pages/aboutUs.html">About us</a> </li>
+        </ul>
+    </div>
     <div class="middle">
-        <div class="sideBar">
-            <div class="links">
-                <ul>
-                    <li><a href="downloads/FakePDF.pdf" download="FakePDF.pdf" target="_blank" rel="noopener noreferrer">Rule Book</a> </li>
-                    <li><a href="downloads/FakePDF.pdf" download="FakePDF.pdf" target="_blank" rel="noopener noreferrer">Meeting logs</a> </li>
-                    <li><a href="downloads/FakePDF.pdf" download="FakePDF.pdf" target="_blank" rel="noopener noreferrer">Playtesting log</a> </li>
-                    <li><a href="downloads/FakePDF.pdf" download="FakePDF.pdf" target="_blank" rel="noopener noreferrer">Flowchart</a> </li>
-                    <li><a href="downloads/FakePDF.pdf" download="FakePDF.pdf" target="_blank" rel="noopener noreferrer">Game Balance analysis</a> </li>
-                    <li><a href="downloads/FakePDF.pdf" download="FakePDF.pdf" target="_blank" rel="noopener noreferrer">Project Experience Summary</a> </li>
-                </ul>
-            </div>
-        </div>
         <div class="content">
             <div class="coreStatement">
                 <p>Core Statement</p>
@@ -51,7 +47,27 @@
         </div>
     </div>
     <div class="footer">
-        <p>Made for IAT210</p>
+        <div class="links">
+            <a href="downloads/FakePDF.pdf" download="FakePDF.pdf" target="_blank" rel="noopener noreferrer">Rule Book</a>
+        </div>    
+        <div class="links">
+            <a href="downloads/FakePDF.pdf" download="FakePDF.pdf" target="_blank" rel="noopener noreferrer">Meeting logs</a>
+        </div>
+        <div class="links">
+            <a href="downloads/FakePDF.pdf" download="FakePDF.pdf" target="_blank" rel="noopener noreferrer">Playtesting log</a> 
+        </div>
+        <div class="links">
+            <a href="downloads/FakePDF.pdf" download="FakePDF.pdf" target="_blank" rel="noopener noreferrer">Flowchart</a>
+        </div>
+        <div class="links">
+            <a href="downloads/FakePDF.pdf" download="FakePDF.pdf" target="_blank" rel="noopener noreferrer">Game Balance analysis</a>
+        </div>
+        <div class="links">
+            <a href="downloads/FakePDF.pdf" download="FakePDF.pdf" target="_blank" rel="noopener noreferrer">Project Experience Summary</a>
+        </div>
+        <div class="credit">
+            <p>Made for IAT210 by Sam Nygard</p>
+        </div>
     </div>
 </body>
 </html>
