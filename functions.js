@@ -5,17 +5,30 @@ const hamburger= document.querySelector(".hamburger");
 const closeIcon= document.querySelector(".closeIcon");
 const menuIcon = document.querySelector(".menuIcon");
 
+let isMenuOpen = false;
+
 function toggleMenu() {
-  if (menu.classList.contains("showMenu")) {
+  if (isMenuOpen) {
+    isMenuOpen = false;
     menu.classList.remove("showMenu");
     closeIcon.style.display = "none";
     menuIcon.style.display = "block";
   } else {
+    isMenuOpen = true;
     menu.classList.add("showMenu");
     closeIcon.style.display = "block";
     menuIcon.style.display = "none";
   }
 }
+
+window.addEventListener("mouseup", function(e){
+    if(isMenuOpen && !document.querySelector(".top").contains(e.target)){
+        isMenuOpen = false;
+        menu.classList.remove("showMenu");
+        closeIcon.style.display = "none";
+        menuIcon.style.display = "block";
+    }
+});
 
 hamburger.addEventListener("click", toggleMenu);
 

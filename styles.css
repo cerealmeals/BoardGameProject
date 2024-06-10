@@ -39,15 +39,24 @@ body{
 
 .menu {
     position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em;
     transform: translateX(100%);
     transition: transform 0.2s;
     top: 100px;
+    height: 25%;
     right: 0;
     /* left: 0;
     bottom: 0;
     z-index: 99; */
     background: royalblue;
 }
+/* .menuItem{
+    margin: 1.5em;
+} */
 
 .showMenu {
     transform: translateX(0);
