@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../default.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
+    <script src="../functions.js" defer></script>
     <title>Animal Heist</title>
 </head>
 <body>
@@ -14,11 +17,15 @@
             <div class="title">
                 <a href="../index.html">Animal Heist</a>
             </div>
-            <div class="links">
+            <button class="hamburger">
+                <i class="menuIcon material-icons">menu</i>
+                <i class="closeIcon material-icons">close</i>
+              </button>
+              <div class="menu">
                 <ul>
-                    <li><a href="gameDescription.html">Game Description</a> </li>
-                    <li><a href="VisualGallery.html">Visual Gallery</a> </li>
-                    <li><a href="aboutUs.html">About us</a> </li>
+                    <li><a class="menuItem" href="gameDescription.html">Game Description</a> </li>
+                    <li><a class="menuItem" href="VisualGallery.html">Visual Gallery</a> </li>
+                    <li><a class="menuItem" href="aboutUs.html">About us</a> </li>
                 </ul>
             </div>
         </div>
@@ -29,28 +36,30 @@
         </div>
     </div>
     <div class="footer">
-        <div class="links">
-            <a href="downloads/FakePDF.pdf" download="FakePDF.pdf" target="_blank" rel="noopener noreferrer">Rule Book</a>
-        </div>    
-        <div class="links">
-            <a href="downloads/FakePDF.pdf" download="FakePDF.pdf" target="_blank" rel="noopener noreferrer">Meeting logs</a>
-        </div>
-        <div class="links">
-            <a href="downloads/FakePDF.pdf" download="FakePDF.pdf" target="_blank" rel="noopener noreferrer">Playtesting log</a> 
-        </div>
-        <div class="links">
-            <a href="downloads/FakePDF.pdf" download="FakePDF.pdf" target="_blank" rel="noopener noreferrer">Flowchart</a>
-        </div>
-        <div class="links">
-            <a href="downloads/FakePDF.pdf" download="FakePDF.pdf" target="_blank" rel="noopener noreferrer">Game Balance analysis</a>
-        </div>
-        <div class="links">
-            <a href="downloads/FakePDF.pdf" download="FakePDF.pdf" target="_blank" rel="noopener noreferrer">Project Experience Summary</a>
+        <div class="grid">
+            <div class="links">
+                <a href="downloads/FakePDF.pdf" download="FakePDF.pdf" target="_blank" rel="noopener noreferrer">Rule Book</a>
+            </div>
+            <div class="links">
+                <a href="downloads/FakePDF.pdf" download="FakePDF.pdf" target="_blank" rel="noopener noreferrer">Meeting logs</a>
+            </div>
+            <div class="links">
+                <a href="downloads/FakePDF.pdf" download="FakePDF.pdf" target="_blank" rel="noopener noreferrer">Playtesting log</a>
+            </div>
+            <div class="links">
+                <a href="downloads/FakePDF.pdf" download="FakePDF.pdf" target="_blank" rel="noopener noreferrer">Flowchart</a>
+            </div>
+            <div class="links">
+                <a href="downloads/FakePDF.pdf" download="FakePDF.pdf" target="_blank" rel="noopener noreferrer">Game Balance analysis</a>
+            </div>
+            <div class="links">
+                <a href="downloads/FakePDF.pdf" download="FakePDF.pdf" target="_blank" rel="noopener noreferrer">Project Experience Summary</a>
+            </div>
         </div>
         <div class="credit">
             <p>Made for IAT210 by Sam Nygard</p>
         </div>
     </div>
 </body>
-</html>
-    
+</html>   
+
