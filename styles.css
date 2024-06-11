@@ -1,6 +1,6 @@
 
 body{
-    height: 100vh;
+    height: 1000px;
     display: flex;
     flex-direction: column;
     font-family: Roboto, sans-serif;
@@ -29,6 +29,7 @@ body{
     --top-bar-height: 100px;
     position: sticky;
     top: 0px;
+    z-index: 3;
     padding: 0px 10px;
     height: var(--top-bar-height);
     display: flex;
