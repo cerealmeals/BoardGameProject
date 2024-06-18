@@ -1,3 +1,7 @@
 div.content p{
     margin: 1.5rem 10%;
 }
+
+.content .grid{
+    gap: 16px;
+}
