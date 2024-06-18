@@ -125,7 +125,7 @@ button.hamburger{
 .Video{
     flex: 1;
     position: relative;
-    width: clamp(100px, 100%, 560px);
+    width: clamp(200px, 100%, 560px);
     padding-bottom: 56.25%;
     height: 0;
     
