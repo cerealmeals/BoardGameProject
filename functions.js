@@ -22,7 +22,7 @@ function toggleMenu() {
 }
 
 window.addEventListener("mouseup", function(e){
-    if(isMenuOpen && !document.querySelector(".top").contains(e.target)){
+    if(isMenuOpen && !document.querySelector(".header").contains(e.target)){
         isMenuOpen = false;
         menu.classList.remove("showMenu");
         closeIcon.style.display = "none";

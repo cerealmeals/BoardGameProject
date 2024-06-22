@@ -2,16 +2,16 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    font-family: Bangers, Poppins, sans-serif;
+    font-family: Poppins, Bangers, sans-serif;
     margin: 0px;
 }
 
-.header{
+.banner{
     display: flex;
     flex-direction: column;
 }
 
-.header img{
+.banner img{
     flex: 1;
     display: flex;
     justify-content: center;
@@ -24,7 +24,7 @@ body{
 }
 
 
-.top{
+.header{
     --top-bar-height: 100px;
     position: sticky;
     top: 0px;
