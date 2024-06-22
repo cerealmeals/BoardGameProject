@@ -1,6 +1,5 @@
-
 body{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     font-family: Bangers, Poppins, sans-serif;
@@ -29,6 +28,7 @@ body{
     --top-bar-height: 100px;
     position: sticky;
     top: 0px;
+    z-index: 3;
     padding: 0px 10px;
     height: var(--top-bar-height);
     display: flex;
@@ -58,8 +58,8 @@ button.hamburger{
     height: max(100px, 25%);
     right: 0;
     /* left: 0;
-    bottom: 0;
-    z-index: 99; */
+    bottom: 0; */
+    z-index: 99;
     background: royalblue;
     border: 1px solid black;
 }
@@ -125,7 +125,7 @@ button.hamburger{
 .Video{
     flex: 1;
     position: relative;
-    width: clamp(100px, 100%, 560px);
+    width: clamp(200px, 100%, 560px);
     padding-bottom: 56.25%;
     height: 0;
     
