@@ -4,6 +4,7 @@ body{
     flex-direction: column;
     font-family: Poppins, Bangers, sans-serif;
     margin: 0px;
+    --small-padding: 14px;
 }
 
 .banner{
@@ -29,8 +30,8 @@ body{
     position: sticky;
     top: 0px;
     z-index: 3;
-    padding: 14px;
-    height: var(--top-bar-height);
+    padding: var(--small-padding);
+    /* height: var(--top-bar-height); */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,6 +47,8 @@ button.hamburger{
     background-color: #c76131;
     border: none;
     color: white;
+    padding: 0;
+    justify-content: left;
 }
 button .menuIcon, button .closeIcon{
     font-size: 48px;
@@ -86,9 +89,22 @@ button .menuIcon, button .closeIcon{
     font-weight: bolder;
 }
 
+.top-links a{
+    color: #587638;
+}
+
+.top-links{
+    display: flex;
+    padding: var(--small-padding);
+    justify-content: space-between;
+}
+
 @media (max-width: 600px){
+    button .menuIcon, button .closeIcon{
+        font-size: 32px;
+    }
     .header{
-        padding: 9px;
+        --small-padding: 9px;
     }
     .title{
         font-size: 32px;
@@ -102,7 +118,7 @@ button .menuIcon, button .closeIcon{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(90deg, green, royalblue);
+    background: #e3c6aa;
 }
 
 /* .sideBar{
@@ -153,9 +169,11 @@ button .menuIcon, button .closeIcon{
 .footer{
     display: flex;
     flex-direction: column;
-    background-color: grey;
+    background-color: #587638;
     justify-content: center;
     align-items: center;  
+    color: white;
+    padding: var(--small-padding);
 }
 
 .grid{
@@ -165,11 +183,23 @@ button .menuIcon, button .closeIcon{
     text-align: center;
 }
 
-.footer.links{
-    text-align: center;
+.footer-links{
+    width: 100%;
+    display: flex;
+    padding: var(--small-padding);
+    gap: 10px;
+    justify-content: space-between;
 }
 .credit{
-    text-align: center;
+    width: 100%;
+    display: flex;
+    padding: var(--small-padding);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.credit .right{
+    text-align: right;
 }
 
 

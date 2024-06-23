@@ -20,7 +20,8 @@ function toggleMenu() {
     menuIcon.style.display = "none";
   }
 }
-
+let height = document.querySelector(".header").offsetHeight + 10;
+menu.style.top = height + "px";
 window.addEventListener("mouseup", function(e){
     if(isMenuOpen && !document.querySelector(".header").contains(e.target)){
         isMenuOpen = false;
