@@ -25,16 +25,16 @@ body{
 
 
 .header{
-    --top-bar-height: 100px;
+    /* --top-bar-height: 100px; */
     position: sticky;
     top: 0px;
     z-index: 3;
-    padding: 0px 10px;
+    padding: 14px;
     height: var(--top-bar-height);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: royalblue;
+    background-color: #c76131;
 }
 
 .hamburger > .closeIcon{
@@ -43,9 +43,12 @@ body{
 
 button.hamburger{
     display: flex;
-    background-color: royalblue;
-    border: 2px solid black;
-    border-radius: 20%;
+    background-color: #c76131;
+    border: none;
+    color: white;
+}
+button .menuIcon, button .closeIcon{
+    font-size: 48px;
 }
 
 .menu {
@@ -60,8 +63,9 @@ button.hamburger{
     /* left: 0;
     bottom: 0; */
     z-index: 99;
-    background: royalblue;
+    background: #c76131;
     border: 1px solid black;
+    border-radius: 10%;
 }
 
 .menu > ul{
@@ -83,6 +87,9 @@ button.hamburger{
 }
 
 @media (max-width: 600px){
+    .header{
+        padding: 9px;
+    }
     .title{
         font-size: 32px;
         font-weight: bolder;
@@ -156,12 +163,10 @@ button.hamburger{
     width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     text-align: center;
-    text-decoration: underline;
 }
 
 .footer.links{
     text-align: center;
-    text-decoration: underline;
 }
 .credit{
     text-align: center;
@@ -181,5 +186,5 @@ ul{
 
 a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
