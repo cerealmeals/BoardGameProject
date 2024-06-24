@@ -16,10 +16,19 @@ div.content p{
     gap: 5%;
 }
 
+.Background, .Trade-offs, .Length, .Thematic-backstory{
+    flex: 1;
+}
+
+
 .trade-length{
     display: flex;
     justify-content: space-between;
     gap: 5%;
+}
+
+.margin{
+    margin: 15px 0;
 }
 
 @media (max-width: 900px) {
