@@ -6,7 +6,7 @@ body{
     margin: 0px;
     --small-vertical-padding: 14px;
     --small-horizontal-padding: 5%;
-    --large-horizontal-padding: 15%;
+    --large-horizontal-padding: 20%;
 }
 @media (max-width: 600px){
     body{
@@ -104,6 +104,7 @@ button .menuIcon, button .closeIcon{
 .top-links{
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
     padding: var(--small-vertical-padding) var(--small-horizontal-padding);
     justify-content: space-between;
 }
@@ -111,35 +112,52 @@ button .menuIcon, button .closeIcon{
 .middle{
     flex: 1;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     background: #e3c6aa;
     padding: 0 var(--large-horizontal-padding);
+    padding-top: 0;
+    padding-bottom: 50px;
 }
 
-/* .sideBar{
-    
-    background: royalblue;
-    box-sizing: border-box;
-    flex: 1 0 0;
-    max-width: 200px;
-    font-size: 24px;
-}
-.sideBar ul{
-    flex-direction: column;
-} */
-
-.content{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-}
 .coreStatement{
     flex: 1;
+    display: flex;
+    gap: 21px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.coreStatement p {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.green-bar{
+    height: 50px;
+    min-width: 14px;
+    background-color: #587638;
+}
+
+.middle-title{
+    color: #c76131;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 35px 0;
+}
+
+.pillar-title{
+    color: #587638;
+    font-size: 20px;
+}
+
+.pillars{
+    display: flex;
+    gap: 8%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .Video{
@@ -149,7 +167,6 @@ button .menuIcon, button .closeIcon{
     /* width: clamp(200px, 100%, 560px); */
     padding-bottom: 56.25%;
     height: 0;
-    
 }
 
 .Video iframe{
