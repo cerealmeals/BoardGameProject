@@ -24,12 +24,7 @@ function toggleMenu() {
 let height = document.querySelector(".header").offsetHeight + 10;
 menu.style.top = height + "px";
 
-window.addEventListener("resize", greenBar)
-greenBar()
-function greenBar() {
-  let green_bar_height = document.querySelector(".coreStatement p").offsetHeight;
-  document.querySelector(".green-bar").style.height = green_bar_height + "px"
-}
+
 
 window.addEventListener("mouseup", function(e){
     if(isMenuOpen && !document.querySelector(".header").contains(e.target)){

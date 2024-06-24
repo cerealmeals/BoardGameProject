@@ -116,9 +116,7 @@ button .menuIcon, button .closeIcon{
     justify-content: center;
     align-items: left;
     background: #e3c6aa;
-    padding: 0 var(--large-horizontal-padding);
-    padding-top: 0;
-    padding-bottom: 50px;
+    padding: 50px var(--large-horizontal-padding);
 }
 
 .coreStatement{
@@ -127,7 +125,6 @@ button .menuIcon, button .closeIcon{
     gap: 21px;
     justify-content: space-between;
     align-items: center;
-    margin-top: 50px;
 }
 
 .coreStatement p {
