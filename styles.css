@@ -4,7 +4,15 @@ body{
     flex-direction: column;
     font-family: Poppins, Bangers, sans-serif;
     margin: 0px;
-    --small-padding: 14px;
+    --small-vertical-padding: 14px;
+    --small-horizontal-padding: 5%;
+    --large-horizontal-padding: 15%;
+}
+@media (max-width: 600px){
+    body{
+        --small-vertical-padding: 9px;
+        --large-horizontal-padding: 5%;
+    }
 }
 
 .banner{
@@ -30,7 +38,7 @@ body{
     position: sticky;
     top: 0px;
     z-index: 3;
-    padding: var(--small-padding);
+    padding: var(--small-vertical-padding) var(--small-horizontal-padding);
     /* height: var(--top-bar-height); */
     display: flex;
     justify-content: space-between;
@@ -67,7 +75,7 @@ button .menuIcon, button .closeIcon{
     bottom: 0; */
     z-index: 99;
     background: #c76131;
-    border: 1px solid black;
+    border: 1px;
     border-radius: 10%;
 }
 
@@ -95,21 +103,9 @@ button .menuIcon, button .closeIcon{
 
 .top-links{
     display: flex;
-    padding: var(--small-padding);
+    flex-wrap: wrap;
+    padding: var(--small-vertical-padding) var(--small-horizontal-padding);
     justify-content: space-between;
-}
-
-@media (max-width: 600px){
-    button .menuIcon, button .closeIcon{
-        font-size: 32px;
-    }
-    .header{
-        --small-padding: 9px;
-    }
-    .title{
-        font-size: 32px;
-        font-weight: bolder;
-    }
 }
 
 .middle{
@@ -119,6 +115,7 @@ button .menuIcon, button .closeIcon{
     justify-content: center;
     align-items: center;
     background: #e3c6aa;
+    padding: 0 var(--large-horizontal-padding);
 }
 
 /* .sideBar{
@@ -139,7 +136,7 @@ button .menuIcon, button .closeIcon{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: min(100%, 720px);
+    max-width: 100%;
 }
 .coreStatement{
     flex: 1;
@@ -148,7 +145,8 @@ button .menuIcon, button .closeIcon{
 .Video{
     flex: 1;
     position: relative;
-    width: clamp(200px, 100%, 560px);
+    width: 100%;
+    /* width: clamp(200px, 100%, 560px); */
     padding-bottom: 56.25%;
     height: 0;
     
@@ -171,9 +169,10 @@ button .menuIcon, button .closeIcon{
     flex-direction: column;
     background-color: #587638;
     justify-content: center;
+    gap: var(--small-vertical-padding);
     align-items: center;  
     color: white;
-    padding: var(--small-padding);
+    padding: var(--small-vertical-padding) var(--small-horizontal-padding);
 }
 
 .grid{
@@ -186,14 +185,13 @@ button .menuIcon, button .closeIcon{
 .footer-links{
     width: 100%;
     display: flex;
-    padding: var(--small-padding);
+    flex-wrap: wrap;
     gap: 10px;
     justify-content: space-between;
 }
 .credit{
     width: 100%;
     display: flex;
-    padding: var(--small-padding);
     justify-content: space-between;
     align-items: center;
 }
@@ -217,4 +215,18 @@ ul{
 a{
     text-decoration: none;
     color: white;
+}
+
+@media (max-width: 600px){
+    button .menuIcon, button .closeIcon{
+        font-size: 32px;
+    }
+    .body{
+        --small-vertical-padding: 9px;
+        --large-horizontal-padding: 5%;
+    }
+    .title{
+        font-size: 32px;
+        font-weight: bolder;
+    }
 }
