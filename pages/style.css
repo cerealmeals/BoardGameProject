@@ -5,3 +5,26 @@ div.content p{
 .content .grid{
     gap: 16px;
 }
+
+.gameDescription{
+    background-color: white;
+}
+
+.background-theme{
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+}
+
+.trade-length{
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+}
+
+@media (max-width: 900px) {
+    .background-theme, .trade-length{
+        flex-direction: column;
+    }
+    
+}

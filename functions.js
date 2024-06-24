@@ -21,10 +21,13 @@ function toggleMenu() {
   }
 }
 
-let height = document.querySelector(".header").offsetHeight + 10;
-menu.style.top = height + "px";
+function getMenuHeight(){
+  let height = document.querySelector(".header").offsetHeight + 10;
+  menu.style.top = height + "px";
+}
+getMenuHeight();
 
-
+window.addEventListener("resize", getMenuHeight);
 
 window.addEventListener("mouseup", function(e){
     if(isMenuOpen && !document.querySelector(".header").contains(e.target)){
