@@ -26,6 +26,7 @@ function toggleMenu() {
 if (window.innerWidth > 600){
   hamburger.remove();
   window.addEventListener("resize", gapResize);
+  gapResize();
 }
 else{
   hamburger.addEventListener("click", toggleMenu);
