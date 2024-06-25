@@ -4,6 +4,7 @@ const menuItems = document.querySelectorAll(".menuItem");
 const hamburger= document.querySelector(".hamburger");
 const closeIcon= document.querySelector(".closeIcon");
 const menuIcon = document.querySelector(".menuIcon");
+const topLinks = document.querySelector(".top-links");
 
 let isMenuOpen = false;
 
@@ -21,10 +22,28 @@ function toggleMenu() {
   }
 }
 
-function getMenuHeight(){
-  let height = document.querySelector(".header").offsetHeight + 10;
-  menu.style.top = height + "px";
+
+if (window.innerWidth > 600){
+  hamburger.remove();
+  window.addEventListener("resize", gapResize);
 }
+else{
+  hamburger.addEventListener("click", toggleMenu);
+  document.querySelector(".list").remove();
+}
+
+function gapResize(){
+  document.querySelector(".list ul").style.gap = (window.innerWidth / 20 ) + "px"
+}
+
+function getMenuHeight(){
+  
+  let height = document.querySelector(".header").offsetHeight;
+  topLinks.style.top = height + "px";
+  menu.style.top = (height + 10 + topLinks.offsetHeight) + "px";
+  
+}
+
 getMenuHeight();
 
 window.addEventListener("resize", getMenuHeight);
@@ -38,7 +57,7 @@ window.addEventListener("mouseup", function(e){
     }
 });
 
-hamburger.addEventListener("click", toggleMenu);
+
 
 menuItems.forEach( 
   function(menuItem) { 
