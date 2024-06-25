@@ -8,12 +8,6 @@ body{
     --small-horizontal-padding: 5%;
     --large-horizontal-padding: 20%;
 }
-@media (max-width: 900px){
-    body{
-        --small-vertical-padding: 9px;
-        --large-horizontal-padding: 5%;
-    }
-}
 
 .banner{
     display: flex;
@@ -243,16 +237,18 @@ a{
 @media (max-width: 900px){
     .pillars{
         flex-direction: column;
+        gap: 25px;
     }
+    
     .coreStatement p {
         font-size: 24px;
-        font-weight: 400;
+        font-weight: 600;
     }
 
     button .menuIcon, button .closeIcon{
         font-size: 32px;
     }
-    .body{
+    body{
         --small-vertical-padding: 9px;
         --large-horizontal-padding: 5%;
     }
