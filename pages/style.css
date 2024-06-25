@@ -27,6 +27,11 @@ div.content p{
     gap: 5%;
 }
 
+i.clockIcon{
+    font-size: 100px;
+    color: #587638;
+}
+
 .margin{
     margin: 15px 0;
 }
