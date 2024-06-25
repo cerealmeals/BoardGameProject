@@ -241,6 +241,14 @@ a{
 }
 
 @media (max-width: 900px){
+    .pillars{
+        flex-direction: column;
+    }
+    .coreStatement p {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
     button .menuIcon, button .closeIcon{
         font-size: 32px;
     }
