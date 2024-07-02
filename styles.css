@@ -9,31 +9,21 @@ body{
     --large-horizontal-padding: 20%;
 }
 
-.banner{
-    display: flex;
-    flex-direction: column;
-}
 
-.banner img{
+.banner img, .lower-banner img{
     flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: grey;
     min-height: 100px;
     height: auto;
-    /* aspect-ratio: 400 / 50; */
     width: 100%;
 }
 
 
 .header{
-    /* --top-bar-height: 100px; */
     position: sticky;
     top: 0px;
     z-index: 2;
     padding: var(--small-vertical-padding) var(--small-horizontal-padding);
-    /* height: var(--top-bar-height); */
     display: flex;
     justify-content: space-between;
     align-items: center;
