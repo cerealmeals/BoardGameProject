@@ -36,6 +36,10 @@ i.clockIcon{
     margin: 15px 0;
 }
 
+.bold{
+    font-weight: bold;
+}
+
 @media (max-width: 900px) {
     .background-theme, .trade-length{
         flex-direction: column;
