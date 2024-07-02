@@ -13,7 +13,7 @@ body{
 .banner img, .lower-banner img{
     flex: 1;
     background-color: grey;
-    min-height: 100px;
+    /* min-height: 100px; */
     height: auto;
     width: 100%;
 }
@@ -89,7 +89,7 @@ button .menuIcon, button .closeIcon{
 
 .top-links a{
     color: #587638;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .top-links{
