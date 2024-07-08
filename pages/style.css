@@ -8,12 +8,12 @@ div.content p{
 
 .gameDescription{
     background-color: white;
+    min-height: 0;
 }
 
 .background-theme{
     display: flex;
     justify-content: space-between;
-    gap: 5%;
 }
 
 .Background, .Trade-offs, .Length, .Thematic-backstory{
@@ -24,7 +24,7 @@ div.content p{
 .trade-length{
     display: flex;
     justify-content: space-between;
-    gap: 5%;
+    flex-wrap: wrap;
 }
 
 i.clockIcon{
