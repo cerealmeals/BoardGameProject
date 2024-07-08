@@ -13,13 +13,23 @@ div.content p{
 
 .background-theme{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
-.Background, .Trade-offs, .Length, .Thematic-backstory{
+.Background, .Trade-offs, .Length{
     flex: 1;
 }
 
+img.margin{
+    align-self: center;
+    max-width: 150px;
+    height: auto;
+    width: auto;
+}
+
+.background-theme .bold{
+    text-align: center;
+}
 
 .trade-length{
     display: flex;
