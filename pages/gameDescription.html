@@ -41,7 +41,13 @@
             <a href="../downloads/Meeting_logs.pdf" download="Meeting_logs.pdf" target="_blank" rel="noopener noreferrer">Meeting logs</a>
         </div>
         <div class="links">
-            <a href="../downloads/Playtest_log.pdf" download="Playtest_log.pdf" target="_blank" rel="noopener noreferrer">Playtesting log</a>
+            <a href="#" onclick="openMultiple()">Playtesting log</a>
+            <script> 
+                function openMultiple(){
+                   window.open("../downloads/Playtest_log.pdf", "_blank", "noopener", "noreferrer");   
+                   window.open("../downloads/Rulebook_interations.pdf", "_blank", "noopener", "noreferrer");
+                }
+              </script>
         </div>
         <div class="links">
             <a href="../downloads/Flowchart.pdf" download="Flowchart.pdf" target="_blank" rel="noopener noreferrer">Flowchart</a>
