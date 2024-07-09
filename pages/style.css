@@ -20,7 +20,7 @@ div.content p{
     flex: 1;
 }
 
-img.margin{
+img.token{
     align-self: center;
     max-width: 150px;
     height: auto;
